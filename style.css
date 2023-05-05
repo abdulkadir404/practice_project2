@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+#bg {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image: url(images/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 806px;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+}
+
+.menu_row {
+    display: flex;
+    margin: 4% 0% 4% 4%;
+    gap: 3%;
+}
+
+.logo {
+    width: 3%;
+}
+
+.line {
+    border: 1px solid #817e7e;
+    height: 0%;
+    margin-top: 1.6%;
+    background-color: #817e7e;
+    width: 43%;
+}
+
+.menu {
+    display: flex;
+    gap: 0%;
+    width: 50%;
+    background: rgb(130 128 132 / 60%);
+}
+
+.menu_button {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-left: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    display: block !important;
+}
+
+#ahome {
+    display: none;
+}
+
+#adestination {
+    display: none;
+}
+
+#acrew {
+    display: none;
+}
+
+#atechnology {
+    display: none;
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.destination {
+    display: none;
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.desflex {
+    display: flex;
+}
+
+.flexd {
+    display: flex;
+    gap: 10%;
+    text-transform: uppercase;
+}
+
+.crewz {
+    display: none;
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.technology {
+    display: none;
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.equal {
+    width: 50%;
+}
+
+.middle {
+    display: block;
+    margin: auto;
+}
+
+.border {
+    border-bottom: 3px solid #ffffff !important;
+}
+
+/*crew-css*/
+.crewb {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 4%;
+    margin-top: 20%;
+    background-color: #787575;
+}
+
+.bcolour {
+    background-color: #ffffff !important;
+}
+
+/*technology-css*/
+.tflex {
+    display: flex;
+    gap: 10%;
+}
+
+.tech_flex {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.techb {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 41%;
+}
+
+.btech {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/*mobile-menu*/
+.mob_m button {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 9%;
+}
+
+.mob_m {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2 2 2 / 73%);
+    position: absolute;
+    width: 43%;
+    height: 71%;
+    left: 57%;
+}
+
+#mob_m {
+    display: none;
+}
+
+#mob_b {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 85%;
+}
+
+.ham {
+    background-image: url(images/icon-hamburger.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: rgb(255 255 255 / 4%);
+    border: none;
+}
+
+.cross {
+    background-image: url(images/icon-close.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: rgb(255 255 255 / 4%);
+    border: none;
+}
+
+/*explore*/
+h3.explore:hover {
+    transform: scale(1.3);
+    transition: 1s ease;
+}
+
+h3.explore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+    color: #000000;
+    background: #ffffff;
+    width: 32%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*media queries*/
+@media(max-width: 576px) {
+    .menu_row {
+        display: none;
+    }
+
+    #mob_b {
+        display: block;
+        margin-top: 3%;
+    }
+
+    .equal {
+        width: 100%;
+    }
+
+    /* home */
+    .home {
+        display: block;
+    }
+
+    .home div h1 {
+        text-align: center;
+    }
+
+    .home div h3 {
+        text-align: center;
+        height: 100px;
+        margin-top: 16%;
+    }
+
+    .home div p {
+        text-align: center;
+    }
+
+    .explore {
+        margin-top: 50%;
+    }
+
+    .menu_button {
+        margin-left: 7%;
+    }
+
+    /*destination*/
+    .desflex {
+        display: block;
+    }
+
+    .desflex div h4 {
+        text-align: center;
+    }
+
+    .flexd {
+        display: block;
+
+    }
+
+    .middle {
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        text-align: center;
+    }
+
+    .destination {
+        padding: 4%;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .pace {
+        margin-left: 19%;
+    }
+
+    .crewb {
+        margin-right: 15%;
+    }
+
+    .crew {
+        padding: 4%;
+    }
+
+    .technology {
+        padding: 4%;
+    }
+
+    /*technology*/
+    .tech_flex {
+        display: block;
+    }
+
+    .tflex {
+        display: block;
+    }
+
+    .techb {
+        margin-bottom: 0%;
+        margin-left: 14%;
+        margin-top: 5%;
+    }
+}

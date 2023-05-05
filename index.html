@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+   
+  </head>
+  <body id="bg">
+    <div class="container">
+      <!-- menu_row -->
+      <div class="menu_row">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <div class="line"></div>
+        <div class="menu">
+          <button onclick="background1()" id="btn1" class="border menu_button">00&nbsp;&nbsp;Home</button>
+          <button onclick="background2()" id="btn2" class="menu_button">01&nbsp;&nbsp;Destination</button>
+          <button onclick="background3()" id="btn3" class="menu_button">02&nbsp;&nbsp;Crew</button>
+          <button onclick="background4()" id="btn4" class="menu_button">03&nbsp;&nbsp;Technology</button>
+        </div>
+      </div>
+      <!--mobile-menu-->
+      <button id="mob_b" class="ham"></button>
+      <div id="mob_m">
+          <div class="mob_m">
+          <button onclick="background1()" id="btn1" class="menu_button">00&nbsp;&nbsp;Home</button>
+          <button onclick="background2()" id="btn2" class="menu_button">01&nbsp;&nbsp;Destination</button>
+          <button onclick="background3()" id="btn3" class="menu_button">02&nbsp;&nbsp;Crew</button>
+          <button onclick="background4()" id="btn4" class="menu_button">03&nbsp;&nbsp;Technology</button>
+      </div>
+      </div>
+      <!-- content -->
+      <!-- home -->
+      <div id="ahome" class="active">
+        <div class="home">
+          <div class="equal">
+            <h3>SO, YOU WANT TO TRAVEL TO</h3>
+            <h1>SPACE</h1>
+            <p>
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div class="equal">
+
+                      <h3 class="explore">EXPLORE</h3>
+
+
+                  
+          </div>
+        </div>
+      </div>
+
+      <!-- destination -->
+      <div id="adestination">
+          <!-- des mars-->
+        <div id="dest1" class="destination active">
+            <div class="desflex">
+                <div class="equal">
+              <h4><span style="color: #858081;">01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h4>
+              <img src="images/image-mars.png" class="middle"/>
+          </div>
+          <div class="equal">
+              <div class="flex">
+                  <button id="marsb" class="menu_button border" onclick="mars()"><h4>MARS</h4></button>
+                  <button id="moonb" class="menu_button" onclick="moon()"><h4>MOON</h4></button>
+                  <button id="europab" class="menu_button" onclick="europa()"><h4>EUROPA</h4></button>
+                  <button id="titanb" class="menu_button" onclick="titan()"><h4>TITAN</h4></button>
+              </div>
+            <h1>MARS</h1>
+            <p>
+              Don’t forget to
+              pack your hiking boots. You’ll need them to tackle Olympus Mons,
+              the tallest planetary mountain in our solar system. It’s two and a
+              half times the size of Everest!
+            </p>
+            <br>
+            <br>
+            <hr>
+            <div class="flexd">
+                <div>
+                    <p>Avg. distance   </p>
+                    <h4>225 mil. km</h4>
+                </div>
+                <div>
+                    <p>Est. travel time</p>
+                    <h4>9 months</h4>
+                </div>
+            </div>
+          </div>
+            </div>
+        </div>
+        <!-- des moon-->
+        <div id="dest2" class="destination">
+            <div class="desflex">
+                <div class="equal">
+              <h4><span style="color: #858081;">01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h4>
+              <img src="images/image-moon.png" class="middle"/>
+          </div>
+          <div class="equal">
+              <div class="flex">
+                  <button id="marsb" class="menu_button border" onclick="mars()"><h4>MARS</h4></button>
+                  <button id="moonb" class="menu_button" onclick="moon()"><h4>MOON</h4></button>
+                  <button id="europab" class="menu_button" onclick="europa()"><h4>EUROPA</h4></button>
+                  <button id="titanb" class="menu_button" onclick="titan()"><h4>TITAN</h4></button>
+              </div>
+            <h1>MOON</h1>
+            <p>
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective 
+              and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 
+              landing sites.
+            </p>
+            <br>
+            <br>
+            <hr>
+            <div class="flexd">
+                <div>
+                    <p>Avg. distance   </p>
+                    <h4>384,400 km</h4>
+                </div>
+                <div>
+                    <p>Est. travel time</p>
+                    <h4>3 days</h4>
+                </div>
+            </div>
+          </div>
+            </div>
+        </div>
+        <!--des europa-->
+        <div id="dest3" class="destination">
+            <div class="desflex">
+                <div class="equal">
+              <h4><span style="color: #858081;">01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h4>
+              <img src="images/image-europa.png" class="middle"/>
+          </div>
+          <div class="equal">
+              <div class="flex">
+                  <button id="marsb" class="menu_button border" onclick="mars()"><h4>MARS</h4></button>
+                  <button id="moonb" class="menu_button" onclick="moon()"><h4>MOON</h4></button>
+                  <button id="europab" class="menu_button" onclick="europa()"><h4>EUROPA</h4></button>
+                  <button id="titanb" class="menu_button" onclick="titan()"><h4>TITAN</h4></button>
+              </div>
+            <h1>EUROPA</h1>
+            <p>
+               The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. 
+               With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+            </p>
+            <br>
+            <br>
+            <hr>
+            <div class="flexd">
+                <div>
+                    <p>Avg. distance   </p>
+                    <h4>628 mil. km</h4>
+                </div>
+                <div>
+                    <p>Est. travel time</p>
+                    <h4>3 years</h4>
+                </div>
+            </div>
+          </div>
+            </div>
+          
+        </div>
+        <!--des tittan-->
+        <div id="dest4" class="destination">
+            <div class="desflex">
+                <div class="equal">
+              <h4><span style="color: #858081;">01</span>&nbsp;&nbsp;PICK YOUR DESTINATION</h4>
+              <img src="images/image-titan.png" class="middle"/>
+          </div>
+          <div class="equal">
+              <div class="flex">
+                  <button id="marsb" class="menu_button border" onclick="mars()"><h4>MARS</h4></button>
+                  <button id="moonb" class="menu_button" onclick="moon()"><h4>MOON</h4></button>
+                  <button id="europab" class="menu_button" onclick="europa()"><h4>EUROPA</h4></button>
+                  <button id="titanb" class="menu_button" onclick="titan()"><h4>TITAN</h4></button>
+              </div>
+            <h1>TITAN</h1>
+            <p>
+               The only moon known to have a dense atmosphere other than Earth, Titan is a home away from 
+               home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+            </p>
+            <br>
+            <br>
+            <hr>
+            <div class="flexd">
+                <div>
+                    <p>Avg. distance   </p>
+                    <h4>1.6 bil. km</h4>
+                </div>
+                <div>
+                    <p>Est. travel time</p>
+                    <h4>7 years</h4>
+                </div>
+            </div>
+          </div>
+            </div>
+          
+        </div>
+      </div>
+
+      <!-- crew -->
+      <div id="acrew">
+          <!--commander-->
+        <div id="crew1" class="crewz active">
+            <span style="font-size: 16px; font-weight: 700; color: #ffffff;"><span style="color: #858081;">02</span>&nbsp;&nbsp;MEET YOUR CREW</span>
+            <div class="flex">
+                <div class="equal">
+            <br>
+            <br>
+            <br>
+            <h2>Commander</h2>
+            <h1>Douglas Hurley</h1>
+            <p>
+               Douglas Gerald Hurley is an American engineer,
+              former Marine Corps pilot and former NASA astronaut. He launch
+              ed into space for the third time as commander of Crew Dragon Demo-2.
+            </p>
+            <div class="flex pace">
+                <button id="commanderb" onclick="commander()" class="crewb bcolour"></button>
+                 <button id="engineerb" onclick="engineer()" class="crewb"></button>
+                <button id="pilotb" onclick="pilot()" class="crewb"></button>
+                <button id="specialistb" onclick="specialist()" class="crewb"></button>
+            </div>
+          </div>
+          <div class="equal"><img src="images/image-douglas-hurley.png" class="middle"/></div>
+            </div>
+          
+        </div>
+        <!--engineer-->
+        <div id="crew2" class="crewz">
+            <span style="font-size: 16px; font-weight: 700; color: #ffffff;"><span style="color: #858081;">02</span>&nbsp;&nbsp;MEET YOUR CREW</span>
+            <div class="flex">
+                <div class="equal">
+            <br>
+            <br>
+            <br>
+            <h2>Flight Engineer</h2>
+            <h1>Anousheh Ansari</h1>
+            <p>
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </p>
+            <div class="flex pace">
+                <button id="commanderb" onclick="commander()" class="crewb"></button>
+                 <button id="engineerb" onclick="engineer()" class="crewb"></button>
+                <button id="pilotb" onclick="pilot()" class="crewb"></button>
+                <button id="specialistb" onclick="specialist()" class="crewb"></button>
+            </div>
+          </div>
+          <div class="equal"><img src="images/image-anousheh-ansari.png" class="middle"/></div>
+            </div>
+          
+        </div>
+        <!--pilot-->
+        <div id="crew3" class="crewz">
+            <span style="font-size: 16px; font-weight: 700; color: #ffffff;"><span style="color: #858081;">02</span>&nbsp;&nbsp;MEET YOUR CREW</span>
+            <div class="flex">
+                <div class="equal">
+            <br>
+            <br>
+            <br>
+            <h2>Pilot</h2>
+            <h1>Victor Glover </h1>
+            <p>
+              Pilot on the first operational flight of the SpaceX Crew Dragon to the International
+              Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member
+              of Expedition 64, and served as a station systems flight engineer.
+            </p>
+            <div class="flex pace">
+                <button id="commanderb" onclick="commander()" class="crewb"></button>
+                 <button id="engineerb" onclick="engineer()" class="crewb"></button>
+                <button id="pilotb" onclick="pilot()" class="crewb"></button>
+                <button id="specialistb" onclick="specialist()" class="crewb"></button>
+            </div>
+          </div>
+          <div class="equal"><img src="images/image-victor-glover.png" class="middle"/></div>
+            </div>
+          
+        </div>
+        <!--specialist-->
+        <div id="crew4" class="crewz">
+            <span style="font-size: 16px; font-weight: 700; color: #ffffff;"><span style="color: #858081;">02</span>&nbsp;&nbsp;MEET YOUR CREW</span>
+            <div class="flex">
+                <div class="equal">
+            <br>
+            <br>
+            <br>
+            <h2>Mission Specialist</h2>
+            <h1>Mark Shuttleworth </h1>
+            <p>
+              Mark Richard Shuttleworth is the founder and CEO
+              of Canonical, the company behind the Linux-based Ubuntu operating system. 
+              Shuttleworth became the first South African to travel to space as a space tourist.
+            </p>
+            <div class="flex pace">
+                <button id="commanderb" onclick="commander()" class="crewb"></button>
+                 <button id="engineerb" onclick="engineer()" class="crewb"></button>
+                <button id="pilotb" onclick="pilot()" class="crewb"></button>
+                <button id="specialistb" onclick="specialist()" class="crewb"></button>
+            </div>
+          </div>
+          <div class="equal"><img src="images/image-mark-shuttleworth.png" class="middle"/></div>
+            </div>
+          
+        </div>
+      </div>
+      <!-- technology -->
+      <div id="atechnology">
+          <!--capsule-->
+        <div id="tec1" class="technology active">
+            <div class="tech_flex">
+          <div class="equal"><img src="images/image-space-capsule-portrait.jpg" class="middle"/></div>
+          <div class="equal">
+                    <div class="tflex">
+                        <div>
+                            <button id="capsuleb" onclick="capsule()" class="techb btech">1</button>
+                            <button id="spaceportb" onclick="spaceport()" class="techb">2</button>
+                            <button id="vehicleb" onclick="vehicle()" class="techb">3</button>
+                        </div>
+                        <div>
+                            <h3>THE TERMINOLOGY...</h3>
+            <h1>Space capsule </h1>
+            <p>
+              A space capsule is an often-crewed spacecraft that uses
+              a blunt-body reentry capsule to reenter the Earth's atmosphere without wings.
+              Our capsule is where you'll spend your time during the flight. It includes
+              a space gym, cinema, and plenty of other activities to keep you entertained.
+            </p>
+                        </div>
+                    </div>
+              
+          </div>
+            </div>
+          
+        </div>
+        <!--spaceport-->
+        <div id="tec2" class="technology">
+            <div class="tech_flex">
+          <div class="equal"><img src="images/image-spaceport-portrait.jpg" class="middle"/></div>
+          <div class="equal">
+                    <div class="tflex">
+                        <div>
+                            <button id="capsuleb" onclick="capsule()" class="techb btech">1</button>
+                            <button id="spaceportb" onclick="spaceport()" class="techb">2</button>
+                            <button id="vehicleb" onclick="vehicle()" class="techb">3</button>
+                        </div>
+                        <div>
+                            <h3>THE TERMINOLOGY...</h3>
+            <h1>Spaceport</h1>
+            <p>
+             A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+             by analogy to the seaport for ships or airport for aircraft. Based in the famous
+             Cape Canaveral, our spaceport is ideally situated to take advantage of the
+             Earth’s rotation for launch.
+            </p>
+                        </div>
+                    </div>
+              
+          </div>
+            </div>
+          
+        </div>
+         
+        <!--vehicle-->
+        <div id="tec3" class="technology">
+            <div class="tech_flex">
+          <div class="equal"><img src="images/image-launch-vehicle-portrait.jpg" class="middle"/></div>
+          <div class="equal">
+                    <div class="tflex">
+                        <div>
+                            <button id="capsuleb" onclick="capsule()" class="techb btech">1</button>
+                            <button id="spaceportb" onclick="spaceport()" class="techb">2</button>
+                            <button id="vehicleb" onclick="vehicle()" class="techb">3</button>
+                        </div>
+                        <div>
+                            <h3>THE TERMINOLOGY...</h3>
+            <h1>Launch vehicle</h1>
+            <p>
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+                        </div>
+                    </div>
+              
+          </div>
+            </div>
+          
+        </div>
+         
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
